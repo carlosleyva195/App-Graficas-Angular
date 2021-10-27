@@ -1,0 +1,17 @@
+<h1 class="text-center">Gráficas Dobles</h1>
+<hr>
+
+<div class="row">
+    <div class="col-md-6">
+        <!-- MANDAMOS EL VALOR TRUE Y NO UN STRING CON LOS [] -->
+        <app-grafica-barra [horizontal]="true"
+                            [barChartData]="productoData"
+                            [barChartLabels]="proveedoresLabels">
+        </app-grafica-barra>
+    </div>
+    <div class="col-md-6">
+        <app-grafica-barra  [barChartData]="proveedoresData"
+                            [barChartLabels]="proveedoresLabels">
+        </app-grafica-barra>
+    </div>
+</div>
